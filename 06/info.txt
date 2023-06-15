@@ -1,0 +1,5 @@
+- '$?' is a variable (already declared) contains status of
+command whether it was success or not
+- exit code = 0 : successfull (everything else is a failure)
+- exit <n> : this line terminates (exists) the script no matter what else is
+	     is written further
