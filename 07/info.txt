@@ -1,0 +1,2 @@
+- while loop : remember the rules of increments
+- remember what subshell is <$('command')>
