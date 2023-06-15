@@ -1,0 +1,4 @@
+- 'which' command is used to find binaries (in command) in the system is present or not
+- htop (you can read about it more later on)
+- 'man test' will give you all the checks for further use
+
