@@ -9,7 +9,7 @@ then
 	sudo pacman -Syu
 fi
 
-	/*
+: '
 
 		if grep -q "Ubuntu" $release_file
 		then
@@ -27,7 +27,7 @@ fi
 		        sudo apt dist-upgrade
 		fi
 
-	*/
+'
 
 # A better way to do the same thing as above
 
