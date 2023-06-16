@@ -1,0 +1,23 @@
+# This folder might not contain any scripts as such but some information only
+
+// Where to store scripts so all the necessary users have access to it
+-->
+	- Filesystem Hierarchy Standard (FHS).
+	- So according to FHS, we can store scripts into /usr/local/bin
+	- So when running scripts from anywhere we will not be required to specify
+	  the exact path to the script. (how?)
+	- $PATH variable contains all of the directories inside of it that shell will
+	  look inside of to find a script or binary it could run.
+	- echo $PATH 
+	- To add path into PATH
+		export PATH=/usr/local/bin:$PATH
+	  This will add the specified path with all the paths that were already
+	  present in $PATH
+
+// Remember file extensions are not required in linux at all
+-->
+	- Hence giving .sh is just for users not for linux
+	- for example if it's a python script extension does not matter until and unless
+	  we have shebang defined properly
+	- shebang tells linux how to run scripts and that is enough
+
