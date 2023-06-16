@@ -1,0 +1,3 @@
+# Backup script
+
+* script is complete but rest of the info will added as soon as possible.
