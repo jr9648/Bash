@@ -1,0 +1,5 @@
+- universal update script
+- keep ansible automation in mind while doing this part
+- *** These scripts are not tested on a system. If any error pops please
+      fix it by yourself.
+
