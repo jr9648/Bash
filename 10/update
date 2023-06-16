@@ -4,6 +4,6 @@ sudo apt update
 exit 0
 
 # Placing this file in /usr/local/bin will allow us to execute the script from any
-# directory without specifying the exact path to the script
+# other directory without specifying the exact path to the script
 
 # extensions are not necessary in linux. They are more for users rather than OS
