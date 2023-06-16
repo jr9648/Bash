@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# This is just a test script to check for 'at'
-# rest is self-explanatory
+# This is just a test script to check for 'cron'
+# remember to use fully qualified commands
+# rest is explained in info.txt
 
-echo "This script was run at $(date)" >> ~/file.log
+/usr/bin/echo "This script was run at $(/usr/bin/date)" >> ~/file.log
 exit 0
