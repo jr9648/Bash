@@ -1,0 +1,10 @@
+# Scheduling jobs
+
+// We will be using 'at' utility to schedule scripts to run later
+
+	- which at --> if not available install package 'at' with apt
+	- commands to schedule a script to run
+
+    - at 15:32 -f ~/<script_name>
+    - atq : to list all the jobs
+    - atrm <job_number> : to delete a job scheduled
