@@ -1,0 +1,14 @@
+# arguments
+
+// just a reminder how this works
+
+	- bash script.sh <enter_the_argument>
+	- bash script.sh <enter_the_arguments>
+
+- ls -l (this is also an argument)
+
+- one useful case is to use arguments in for example such a script
+  which is used to make backups and everytime we can specify the
+  directory as an argument with command to back things up at.
+
+- $# tells us the number of arguments user has passwed into the script.
