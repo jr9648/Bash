@@ -12,6 +12,9 @@
 # Check to see if rsync is installed.
 
 	if ! command -v rsync > /dev/null 2>&1
+	# so 2>&1 says to send standard error to where ever standard output is
+	# being redirected as well. Which since it's being sent to /dev/null is
+	# akin to ignoring any output at all.
 	then
 		echo "This script requires rsync to be installed."
 		echo "Please use your distro package manager to install rsync and try again."
