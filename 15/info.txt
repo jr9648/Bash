@@ -1,0 +1,23 @@
+# In this section we will be using 'cron' to schedule jobs
+
+// Pre-requisite information
+	
+	- use fully qualified commands; two reasons for that :-
+		-- cracker can put harmfull scripts named 'echo' or something like this
+		   which can become a security vulnerability to the system.
+		-- sometimes scripts might not run in standard shell environment, so PATH
+		   variable might not be actually the same when you are doing that manually. 
+
+// cron
+	- crontab -e
+	- the file will open in tmp, this does not means that
+	  the file is actually located there. It is a temporary file and is
+	  saved in right place after getting checked for any typos or errors by
+	  cron.
+	- we have legend in the crontab file to schedule our tasks
+	- m h dom mon dow command
+		-- minute hours day_of_month month day_of_week command
+		-- 30 * * * * /usr/local/bin/<script_name>
+		--- it means the script will run at 30 minutes of every hour, each day of the month, every month, every day of the week
+		<?> 0/7 for sunday and {1..6} for monday to saturday
+	- crontab -u <user> -e : to run the script
