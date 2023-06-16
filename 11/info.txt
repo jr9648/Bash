@@ -1,0 +1,43 @@
+# data streams
+
+// standard output
+-->
+	- we do ls and it prints output with exit code equals to 0
+	- find command will give both std output and std error
+	- designated by 1
+		- hence 'find /etc -type f 1> /dev/null' will send standard
+		  output to null
+	- or can be send to a file
+
+// standard error
+-->
+	- we cd into non existent directory and it gives exit code not equal to 0
+	- designated by 2
+		- hence 'find /etc -type f 2> /dev/null' will send standard
+                  error to null
+	- or can be send to a file
+
+<?> To send both std output and std error to null or to a file,
+    we can use '&'
+	- hence 'find /etc -type f &> /dev/null' will send both
+	  null
+	- 'find /etc -type f 2> error.log 1> success.log' we can user
+	  command like this to save standard error and standard output
+	  separately in a file.
+
+// standard input
+-->
+	- we use 'read' to get standard input
+
+----------------<?>----------------
+EXTRA INFO & SUMMARY
+
+> overwrite
+>> append
+1 is for standard output
+2 is for standard error
+read is used to get standard input
+#	one line comment
+: '
+	Multi line comment
+'
